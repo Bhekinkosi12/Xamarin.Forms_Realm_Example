@@ -68,7 +68,7 @@ namespace Xamarin.Forms_Realm.ViewModels {
 
         void SavePlayer() {
 
-            var team = context.All<Team>().Where(t => t.TeamId == _teamId).FirstOrDefault();
+            var team = context.All<Team>().Where(s => s.TeamId == _teamId).FirstOrDefault();
 
             context.Write(() => {
 
