@@ -18,6 +18,7 @@ namespace Xamarin.Forms_Realm.ViewModels {
         public ObservableCollection<Team> AllTeams {
             get { return allTeams; }
             set { allTeams = value;
+                 OnPropertyChanged();
             }
         }
 
